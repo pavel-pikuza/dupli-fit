@@ -55,7 +55,6 @@ The program will generate **4 plots**:
 dupli-fit/
 ├── bike_fit.py                     # Main script for coordinate conversion & visualization
 ├── doc/
-│   ├── bike_data.csv               # Example dataset with bike measurements
 │   ├── example_cartessian.png      # Sample Cartesian plot
 │   ├── example_polar.png           # Sample Polar plot
 │   ├── multiple_bikes_bb.png       # Bikes comparison (center in Bottom Bracket)
@@ -70,14 +69,7 @@ dupli-fit/
 ## 📌 How It Works
 
 ### **1️⃣ Data Format**
-The program expects a CSV file (`bikes_data.csv`) containing bikes measurements.  
-Each row represents a different bike model with either **polar** or **Cartesian** coordinates.
-
-| Bike Name  | r_to_handlebar | theta_to_handlebar | r_to_bottom_bracket | theta_to_bottom_bracket | handlebar_x | handlebar_y | saddle_x | saddle_y |
-|------------|---------------|--------------------|----------------------|-------------------------|-------------|-------------|----------|----------|
-| Road 1     | 900.0         | 9.5                | 950.0                | 80.4                    | NaN         | NaN         | NaN      | NaN      |
-| TT 1       | NaN           | NaN                | NaN                  | NaN                     | 728.0       | 785.0       | -159.0   | 937.0    |
-
+Read bikes data from csv file. 
 If **Cartesian coordinates are missing**, the program **calculates them from polar coordinates**.  
 If **Polar coordinates are missing**, it **converts from Cartesian**.
 
@@ -118,9 +110,6 @@ The program includes the following transformations:
 ### **📌 Excel-based tool**
 A spreadsheet-based version of this tool is available on [Arch Design Works](https://archdesignwork.com).
 ![Excel-base comparison tool](doc/excel_version.png)
-
-## 📌 Contributing
-If you have suggestions or find a bug, feel free to open an **issue** or **pull request**.
 
 ---
 
