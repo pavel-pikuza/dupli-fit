@@ -1,0 +1,5 @@
+numpy
+pandas
+matplotlib
+seaborn
+git+https://github.com/pavel-pikuza/math-utils.git

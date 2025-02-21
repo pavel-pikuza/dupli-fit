@@ -1,0 +1,8 @@
+Bike Name,r_to_handlebar,theta_to_handlebar,r_to_bottom_bracket,theta_to_bottom_bracket,handlebar_x,handlebar_y,saddle_x,saddle_y,s_handlebar_x,s_handlebar_y,s_bottom_bracket_x,s_bottom_bracket_y
+Road 1,900.0,9.5,950.0,80.4,,,,,,,,
+Road 2,870.0,12.2,830.0,85.5,,,,,,,,
+TT 1,850.0,8.4,870.0,81.8,,,,,,,,
+TT 2,,,,,728.0,785.0,-159.0,937.0,,,,
+Gravel 1,,,,,745.0,780.0,-162.0,920.0,,,,
+Gravel 2,,,,,780.0,800.0,-180.0,940.0,,,,
+Mountain 1,,,,,760.0,750.0,-170.0,910.0,,,,
