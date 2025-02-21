@@ -72,7 +72,7 @@ def plot_cartesian(handlebar_x, handlebar_y, saddle_x, saddle_y):
 
     plt.scatter(handlebar_x, handlebar_y, color="blue", label="Handlebar", s=100, edgecolor="black")
     plt.scatter(saddle_x, saddle_y, color="red", label="Saddle", s=100, edgecolor="black")
-    plt.scatter(0, 0, color="green", marker="x", s=150, label="Bottom Bracket")
+    plt.scatter(0, 0, color="black", marker="+", s=150, label="Bottom Bracket")
 
     plt.xlabel("X (mm)")
     plt.ylabel("Y (mm)")
@@ -95,7 +95,7 @@ def plot_polar(r_to_handlebar, theta_to_handlebar, r_to_bottom_bracket, theta_to
 
     ax.scatter(theta_to_handlebar_rad, r_to_handlebar, color="blue", label="Handlebar", s=120)
     ax.scatter(theta_to_bottom_bracket_rad, r_to_bottom_bracket, color="red", label="Bottom Bracket", s=120)
-    ax.scatter(0, 0, color="green", marker="x", s=150, label="Saddle")
+    ax.scatter(0, 0, color="black", marker="+", s=150, label="Saddle")
 
     ax.set_title("Bike Fit - Polar Coordinate System")
     ax.legend(title="Bike Parts")
@@ -151,7 +151,7 @@ def plot_bike_geometry(bike_data, center='bottom_bracket'):
 
 if __name__ == "__main__":
     # Load bike data from file
-    bike_data = pd.read_csv("bike_data.csv")
+    bike_data = pd.read_csv("doc/bikes_data.csv")
 
     # Apply transformation to fill missing values
     bike_data = bike_data.apply(fill_missing_coordinates, axis=1)
